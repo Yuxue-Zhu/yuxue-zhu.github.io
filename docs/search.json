@@ -4,13 +4,34 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "I completed my undergraduate studies in Computer Science and Biology at McGill University in 2021 and are pursing master degreed of Data Science (MDS) program at University of British Columbia\nAfter graduation, I worked as a software engineer at FinTech companies, Block and StraitsX for 3 years. These experiences developed my interest in data, problem-solving, and building practical solutions. Through the MDS program, I hope to strengthen my analytical skills and learn how to apply them to real-world problems."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "I completed my undergraduate studies in Computer Science and Biology at McGill University in 2021 and are pursing master degreed of Data Science (MDS) program at University of British Columbia\nAfter graduation, I worked as a software engineer at FinTech companies, Block and StraitsX for 3 years. These experiences developed my interest in data, problem-solving, and building practical solutions. Through the MDS program, I hope to strengthen my analytical skills and learn how to apply them to real-world problems."
+  },
+  {
+    "objectID": "about.html#why-data-science",
+    "href": "about.html#why-data-science",
+    "title": "About",
+    "section": "Why data science",
+    "text": "Why data science\nMy experience in software development made me interested in how data can be used to better understand users, solve problems, and support decision-making. I joined the MDS program to develop stronger skills in statistics, data analysis, and machine learning, and to combine my software engineering background with data science."
+  },
+  {
+    "objectID": "about.html#outside-of-data-science",
+    "href": "about.html#outside-of-data-science",
+    "title": "About",
+    "section": "Outside of data science",
+    "text": "Outside of data science\nI enjoy exploring new places, trying different foods, and spending time with friends. I recently started learning ice skate! If anyone would like to skate together at UBC, feel free to reach out. I’d love to have some skating buddies!"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Yuxue Zhu",
     "section": "",
-    "text": "I’m from China and I completed my undergraduate studies in Computer Science and Biology at McGill University. After graduation, I worked as a software engineer at Block and StraitsX for 3 years. These experiences developed my interest in data, problem-solving, and building practical solutions. Through the MDS program, I hope to strengthen my analytical skills and learn how to apply them to real-world problems."
+    "text": "Hi! I’m a software developer currently pursuing the Master of Data Science (MDS) program at the University of British Columbia. With experience in full-stack and backend development, I’m expanding my skills in data analysis, statistics, and machine learning. I’m looking to transition my software engineering background into a career in data science or data engineering, where I can build data-driven solutions to solve real-world problems."
   }
 ]

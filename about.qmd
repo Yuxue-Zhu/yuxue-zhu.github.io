@@ -1,5 +1,14 @@
 ---
 title: "About"
 ---
+## Background
+I completed my undergraduate studies in Computer Science and Biology at McGill University in 2021 and are pursing master degreed of Data Science (MDS) program at University of British Columbia
 
-About this site
+After graduation, I worked as a software engineer at FinTech companies, Block and StraitsX for 3 years. These experiences developed my interest in data, problem-solving, and building practical solutions. Through the MDS program, I hope to strengthen my analytical skills and learn how to apply them to real-world problems.
+
+## Why data science
+My experience in software development made me interested in how data can be used to better understand users, solve problems, and support decision-making. I joined the MDS program to develop stronger skills in statistics, data analysis, and machine learning, and to combine my software engineering background with data science.
+
+## Outside of data science
+I enjoy exploring new places, trying different foods, and spending time with friends.
+I recently started learning ice skate! If anyone would like to skate together at UBC, feel free to reach out. I’d love to have some skating buddies!
