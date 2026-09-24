@@ -1,6 +1,106 @@
 ---
-title: "Penguins"
+title: "Penguins Analysis with Python"
 author: "Yuxue Zhu"
 date: 2026-09-24
 ---
 
+# Introduction
+
+In this post, I explore the `palmerpenguins` dataset using Python. 
+
+The data come from the `palmerpenguins` dataset. The data were collected and
+made available by Dr. Kristen Gorman and the Palmer Station, Antarctica LTER
+Program.
+
+**Data source:** [palmerpenguins](https://allisonhorst.github.io/palmerpenguins/)
+
+## Setup
+
+```{python}
+#| message: false
+#| warning: false
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+from palmerpenguins import load_penguins
+```
+
+## Loading the data
+
+```{python}
+penguins = load_penguins()
+
+print("Rows:", penguins.shape[0])
+print("Columns:", penguins.shape[1])
+```
+
+The dataset contains 344 observations and 8 variables.
+
+# Comparing species
+
+Calculate the number of penguins and average body mass for each species.
+
+```{python}
+species_summary = (
+    penguins
+    .groupby("species")
+    .agg(
+        n=("species", "size"),
+        mean_body_mass_g=("body_mass_g", "mean"),
+        sd_body_mass_g=("body_mass_g", "std")
+    )
+    .round(2)
+)
+
+species_summary
+```
+
+The summary shows differences in body mass among the three species. Gentoo
+penguins have the highest average body mass, while Adelie penguins have the
+lowest.
+
+# Visualizing body mass
+
+Create a boxplot to compare body mass across species.
+
+```{python}
+#| label: fig-penguin-mass
+#| fig-cap: "Body mass of penguins by species."
+
+penguins.boxplot(
+    column="body_mass_g",
+    by="species"
+)
+
+plt.title("Penguin Body Mass by Species")
+plt.suptitle("")
+plt.xlabel("Species")
+plt.ylabel("Body mass (g)")
+plt.show()
+```
+
+The boxplot shows that Gentoo penguins generally have greater body mass than
+Adelie and Chinstrap penguins.
+
+# Flipper length and body mass
+
+Finally, Calculate the correlation between flipper length and body mass.
+
+```{python}
+correlation = penguins[
+    ["flipper_length_mm", "body_mass_g"]
+].corr()
+
+correlation
+```
+
+The correlation matrix shows a positive relationship between flipper length
+and body mass. This suggests that penguins with longer flippers tend to be
+heavier.
+
+# Conclusion
+
+The Python analysis shows differences in body mass among the three penguin
+species. Gentoo penguins generally have the greatest body mass, and there is
+a positive relationship between flipper length and body mass.
