@@ -96,7 +96,7 @@ https://allisonhorst.github.io/palmerpenguins/
 The original data were collected by Dr. Kristen Gorman and the Palmer
 Station Long Term Ecological Research Program in Antarctica.
 
-### Network requirements
+## Network requirements
 
 The build **does require network access** if the Python environment has not
 already been set up and its dependencies need to be downloaded with `uv`.
@@ -105,9 +105,8 @@ The R environment may also need network access the first time `renv::restore()`
 is run, because required R packages may need to be downloaded.
 
 Once the environments and dependencies have been restored, the Quarto build
-does not need to download the dataset from the internet if the project uses
-the local/project-managed copy of the data.
+does not need to download the dataset from the internet.
 
 The Python analysis loads the Palmer Penguins data through the
-`palmerpenguins` Python package, so the package must be available in the
-restored Python environment.
+`palmerpenguins` Python package and R library, so the package must be available in the
+restored environments.
