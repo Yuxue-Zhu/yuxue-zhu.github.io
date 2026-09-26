@@ -1,0 +1,50 @@
+---
+title: "Penguins Analysis with R and Python"
+author: "Yuxue Zhu"
+date: 2026-09-26
+---
+
+# Introduction
+
+This post demonstrates how R and Python can be used together in the same
+Quarto document.Use the `reticulate` package to pass objects between R
+and Python.
+
+**Data source:** [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/)
+
+# Setup
+
+```{r}
+#| message: false
+#| warning: false
+
+library(palmerpenguins)
+library(dplyr)
+library(reticulate)
+```
+
+# Calculate a result in R
+```{r}
+species_mass <- penguins |>
+  group_by(species) |>
+  summarise(
+    mean_body_mass_g = mean(body_mass_g, na.rm = TRUE)
+  )
+  species_mass
+```
+
+# Use the R object in Python
+
+```{python}
+species_mass_summary = r.species_mass
+print(species_mass_summary)
+
+mean_mass = species_mass_summary["mean_body_mass_g"].mean()
+print(f"Mean body mass: {mean_mass:.2f} g")
+```
+# Use the python object in R
+```{r}
+mean_mass_from_python <- py$mean_mass
+
+mean_mass_from_python
+```
